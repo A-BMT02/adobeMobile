@@ -8,11 +8,11 @@ export const BigCard = () => {
         <img src={standing} />
       </div>
 
-      <div className="flex flex-col absolute bottom-2 left-6">
-        <p className="text-[10px]">Ankle Boot</p>
-        <div className="flex space-x-3 items-center">
-          <del className="text-[12px] text-tgray">$200</del>
-          <p className="text-[10px]">$100</p>
+      <div className="flex flex-col absolute bottom-2 left-4">
+        <p className="text-[4px] font-bold">Ankle Boot</p>
+        <div className="flex space-x-1 items-center">
+          <del className="text-[7px] text-tgray text-[#939393]">$200</del>
+          <p className="text-[6px]">$100</p>
         </div>
       </div>
     </div>

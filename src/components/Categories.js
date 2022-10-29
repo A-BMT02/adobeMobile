@@ -24,20 +24,22 @@ export const Categories = () => {
       <Category title="Hijab Clothing" image={girl3} background={outwear} />
       <Category title="Hijab Clothing" image={girl4} background={outwear} />
 
-      <div className="flex justify-center space-x-4 mt-5  text-sm px-5 ">
-        <div className=" bg-dpink text-white px-4 py-1.5 rounded-xl  w-[100px] text-center flex items-center">
-          <p>Best seller</p>
+      <div className="flex justify-center space-x-4 mt-5  text-sm px-5  ">
+        <div className=" bg-dpink text-white px-2 py-0.5 rounded-xl  w-[100px] text-center flex items-center justify-center">
+          <p className="text-[10px]">Best seller</p>
         </div>
 
-        <div className="border border-dpink text-blacke px-4 py-1.5 rounded-xl  w-[100px] text-center flex items-center">
-          <p>More like</p>
+        <div className="border border-dpink text-blacke px-2 py-0.5 rounded-xl  w-[100px] text-center flex items-center justify-center">
+          <p className="text-[10px]">More like</p>
         </div>
-        <div className="border border-dpink text-blacke px-4 py-1.5 rounded-xl w-[100px] text-center flex items-center">
-          <p>More interactive</p>
+        <div className="border border-dpink text-blacke px-2 py-0.5 rounded-xl w-[100px] text-center flex items-center justify-center">
+          <p className="text-[10px] leading-3">More interactive</p>
         </div>
       </div>
 
-      <Cards />
+      <div className="-mt-5">
+        <Cards />
+      </div>
 
       <Category title="Lingerie" image={girl3} background={outwear} />
       <Category title="Underwear" background={underwear} image={girl4} />

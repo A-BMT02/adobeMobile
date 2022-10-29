@@ -7,16 +7,18 @@ export const Latest = () => {
     <div className="flex flex-col  mt-5">
       <div className="flex flex-col px-4">
         <p className="font-bold">Latest</p>
-        <div className="w-[20px] h-1 bg-dpink"></div>
+        <div className="w-[20px] h-1 bg-dpink rounded-xl"></div>
       </div>
 
       <div className="relative flex flex-col">
         <div>
           <img src={girl2} />
-          <div className="space-y-2 items-start text-white flex flex-col absolute top-1/2 -translate-x-2/4 -translate-y-2/4 left-36">
-            <p>For all your summer clothing needs</p>
-            <div className="flex justify-around space-x-4 px-4 py-2 bg-dpink rounded-2xl">
-              <p>SEE MORE</p>
+          <div className="space-y-2 items-start text-white flex flex-col absolute top-1/2 -translate-x-2/4 -translate-y-2/4 left-28">
+            <p className="text-sm max-w-[120px]">
+              For all your summer clothing needs
+            </p>
+            <div className="flex justify-around space-x-4 px-4 py-2 bg-dpink rounded-2xl ">
+              <p className="text-xs">SEE MORE</p>
               <img src={arrow} />
             </div>
           </div>

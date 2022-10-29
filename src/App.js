@@ -10,7 +10,7 @@ import { Reviews } from "./components/Reviews";
 
 function App() {
   return (
-    <div>
+    <div className="poppins">
       <Top />
       <Carousel />
       <Why />

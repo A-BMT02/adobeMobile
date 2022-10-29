@@ -4,13 +4,13 @@ import girl5 from "../images/girl5.png";
 export const News = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex justify-between px-2 my-2">
+      <div className="flex justify-between px-2 my-2 items-center">
         <div className="flex flex-col px-2">
           <p className="font-bold text-sm">Our News</p>
           <div className="w-[25px] h-1 bg-dpink rounded-xl"></div>
         </div>
         <div>
-          <p className="text-dpink text-sm">View all</p>
+          <p className="text-dpink text-[10px]">View all</p>
         </div>
       </div>
       <div className="flex flex-col space-y-4 bg-dpink">
