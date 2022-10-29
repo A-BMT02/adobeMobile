@@ -11,13 +11,13 @@ import { CurveSection } from "./CurveSection";
 export const Categories = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex justify-between px-2">
+      <div className="flex justify-between px-2 items-center">
         <div className="flex flex-col px-2">
           <p className="font-bold text-sm">Category</p>
           <div className="w-[35px] h-1 bg-dpink rounded-xl"></div>
         </div>
         <div>
-          <p className="text-dpink text-sm">View all</p>
+          <p className="text-dpink text-xs">View all</p>
         </div>
       </div>
       <Category title="Outwear" image={girl3} background={outwear} />

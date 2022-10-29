@@ -29,12 +29,6 @@ export const Review = () => {
           </div>
         </div>
       </div>
-
-      <div className="flex justify-center pb-4 space-x-1">
-        <div className="w-8 h-1 bg-dpink rounded-2xl"></div>
-        <div className="w-1 h-1 bg-white rounded-full"></div>
-        <div className="w-1 h-1 bg-white rounded-full"></div>
-      </div>
     </div>
   );
 };
