@@ -15,7 +15,7 @@ export const Benefits = () => {
   }, [target]);
 
   return (
-    <div className="flex flex-col space-y-6 mt-10">
+    <div className="flex flex-col space-y-6 mt-10 overflow-hidden">
       <div className="flex justify-between px-2 items-center">
         <div className="flex flex-col px-2">
           <p className="font-bold text-sm">Many benefits are waiting for you</p>
