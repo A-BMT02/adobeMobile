@@ -21,7 +21,7 @@ export const Category = ({ title, image, background }) => {
 
         <div className="text-white items-center flex flex-col space-y-2  absolute top-1/2 -translate-x-2/4 -translate-y-2/4 left-1/2">
           <p className="tracking-wider text-sm">{title}</p>
-          <div className="flex bg-dpink justify-around space-x-2 px-4 py-2 rounded-2xl">
+          <div className="flex bg-dpink justify-around space-x-2 px-4 py-2 rounded-2xl hover:bg-transparent hover:border hover:border-white cursor-pointer">
             <p className="text-[10px]">SEE MORE </p>
             <img src={arrow} />
           </div>

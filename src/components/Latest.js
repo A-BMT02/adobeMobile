@@ -32,7 +32,7 @@ export const Latest = () => {
                 <p className="text-sm max-w-[120px]">
                   For all your summer clothing needs
                 </p>
-                <div className="flex justify-around space-x-4 px-4 py-2 bg-dpink rounded-2xl ">
+                <div className="flex justify-around space-x-4 px-4 py-2 bg-dpink rounded-2xl hover:bg-transparent hover:border hover:border-white cursor-pointer ">
                   <p className="text-xs">SEE MORE</p>
                   <img src={arrow} />
                 </div>
@@ -45,7 +45,7 @@ export const Latest = () => {
                 <p className="text-sm max-w-[120px]">
                   For all your summer clothing needs
                 </p>
-                <div className="flex justify-around space-x-4 px-4 py-2 bg-dpink rounded-2xl ">
+                <div className="flex justify-around space-x-4 px-4 py-2 bg-dpink rounded-2xl hover:bg-transparent hover:border hover:border-white cursor-pointer ">
                   <p className="text-xs">SEE MORE</p>
                   <img src={arrow} />
                 </div>

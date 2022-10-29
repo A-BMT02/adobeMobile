@@ -6,12 +6,12 @@ export const Search = () => {
   return (
     <div className="flex justify-between bg-bgray rounded-xl py-1 px-3">
       <div className="flex space-x-2 bg-bgray">
-        <img src={search} />
+        <img className="cursor-pointer" src={search} />
         <input className="text-opink bg-bgray" placeholder="Search..." />
       </div>
 
       <div>
-        <img src={camera} />
+        <img className="cursor-pointer" src={camera} />
       </div>
     </div>
   );
