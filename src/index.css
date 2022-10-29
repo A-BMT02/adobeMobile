@@ -7,3 +7,8 @@
 .poppins {
     font-family: 'Poppins', sans-serif;
 }
+
+.overlay {
+    background-color: #4d1b37;
+    opacity: 0.278;
+}
