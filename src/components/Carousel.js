@@ -49,7 +49,7 @@ export const Carousel = () => {
 
       <div ref={ref} className="flex transition-all duration-1000 w-[200%]">
         {data.map((item) => (
-          <div>
+          <div className="relative">
             <div className="flex">
               <img src={girl} />
             </div>
@@ -76,7 +76,23 @@ export const Carousel = () => {
               <div className="flex space-x-2 items-center">
                 <div className="flex flex-col space-y-0.5 items-center text-xs text-white">
                   <p className="text-[8px]">01</p>
-                  <div className="w-0.5 h-20 bg-white opacity-30"></div>
+                  <div className="relative ">
+                    <div className="w-0.5 h-20 bg-white opacity-30"></div>
+                    <div
+                      className={
+                        target === 0
+                          ? "block absolute top-0 w-0.5 h-10 bg-white"
+                          : "hidden"
+                      }
+                    ></div>
+                    <div
+                      className={
+                        target === 1
+                          ? "absolute bottom-0 w-0.5 h-10 bg-white"
+                          : "hidden"
+                      }
+                    ></div>
+                  </div>
                   <p className="text-[8px]">02</p>
                 </div>
               </div>
