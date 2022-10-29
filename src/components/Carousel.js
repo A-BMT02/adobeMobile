@@ -30,7 +30,7 @@ export const Carousel = () => {
     }
   };
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <div className="absolute z-10 px-2 top-1/2 -translate-x-2/4 -translate-y-2/4 left-1/2 w-full flex justify-between">
         <div
           onClick={(e) => next()}
