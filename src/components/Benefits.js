@@ -15,7 +15,7 @@ export const Benefits = () => {
   }, [target]);
 
   return (
-    <div className="flex flex-col space-y-6 mt-10 overflow-hidden">
+    <div className="flex flex-col space-y-6 mt-10 ">
       <div className="flex justify-between px-2 items-center">
         <div className="flex flex-col px-2">
           <p className="font-bold text-sm">Many benefits are waiting for you</p>
@@ -28,7 +28,7 @@ export const Benefits = () => {
         </div>
       </div>
 
-      <div className="bg-bgray flex flex-col space-y-2 w-full ">
+      <div className="bg-bgray flex flex-col space-y-2 w-full overflow-hidden ">
         <div ref={ref} className=" transition-all duration-1000 w-[300%] flex">
           {data.map((item) => (
             <div className="flex justify-between items-start px-4 py-3 w-full">
