@@ -28,7 +28,7 @@ export const Latest = () => {
             {/* first */}
             <div className="w-full relative">
               <img src={girl2} />
-              <div className="space-y-2 items-start text-white flex flex-col absolute top-1/2 -translate-x-2/4 -translate-y-2/4 left-28">
+              <div className="space-y-2 items-start text-white flex flex-col absolute top-1/2 -translate-x-2/4 -translate-y-2/4 left-24">
                 <p className="text-sm max-w-[120px]">
                   For all your summer clothing needs
                 </p>
@@ -40,8 +40,8 @@ export const Latest = () => {
             </div>
             {/* second */}
             <div className="mt-2 w-full relative">
-              <img src={girl6} />
-              <div className="space-y-2 items-start text-white flex flex-col absolute top-1/2 -translate-x-2/4 -translate-y-2/4 left-28">
+              <img className="-ml-3" src={girl6} />
+              <div className="space-y-2 items-start text-white flex flex-col absolute top-1/2 -translate-x-2/4 -translate-y-2/4 left-24">
                 <p className="text-sm max-w-[120px]">
                   For all your summer clothing needs
                 </p>

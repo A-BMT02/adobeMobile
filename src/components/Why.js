@@ -3,6 +3,7 @@ import safe from "../images/safe.png";
 import money from "../images/money.png";
 import fast from "../images/fast.png";
 import best from "../images/best.png";
+import shipping from "../images/shipping.svg";
 
 export const Why = () => {
   return (
@@ -24,8 +25,10 @@ export const Why = () => {
         </div>
 
         <div className="flex flex-col space-y-3 items-center  text-center w-1/4 ">
-          <img src={fast} className="w-[58px] h-[58px]" />
-          <p className="font-bold text-xs">Fast Shipping</p>
+          <div className="w-[58px] h-[58px] rounded-full border-[3px] border-[#f564b6] bg-[#ffeef8]">
+            <img src={shipping} className="w-[58px] h-[58px]" />
+          </div>
+          <p className="font-bold text-xs ">Fast Shipping</p>
         </div>
 
         <div className="flex flex-col space-y-3 items-center  text-center w-1/4">

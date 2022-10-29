@@ -40,7 +40,7 @@ export const Reviews = () => {
         </div>
       </div>
 
-      <div className="flex justify-center pb-4 space-x-1 -mt-4">
+      <div className="flex justify-center pb-4 space-x-1 -mt-2">
         <div
           onClick={(e) => setTarget(0)}
           className={
