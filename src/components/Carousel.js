@@ -2,11 +2,25 @@ import React, { useState, useEffect, useRef } from "react";
 import girl from "../images/girl.png";
 import arrow from "../images/arrow.svg";
 import play from "../images/play.png";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Carousel = () => {
   const [target, setTarget] = useState(0);
   const [data, setData] = useState(["1", "2"]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target) {
+        case 0:
+          setTarget(1);
+          return;
+        case 1:
+          setTarget(0);
+          return;
+      }
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [target]);
 
   useEffect(() => {
     const percent = 50 * target;

@@ -14,6 +14,23 @@ export const Benefits = () => {
     ref.current.style.transform = `translateX(-${percent}%)`;
   }, [target]);
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target) {
+        case 0:
+          setTarget(1);
+          return;
+        case 1:
+          setTarget(2);
+          return;
+        case 2:
+          setTarget(0);
+      }
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [target]);
+
   return (
     <div className="flex flex-col space-y-6 mt-10 ">
       <div className="flex justify-between px-2 items-center">

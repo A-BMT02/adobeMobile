@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SmallCard } from "./SmallCard";
 import { BigCard } from "./BigCard";
 import left from "../images/left.png";
@@ -6,6 +6,25 @@ import right from "../images/right.png";
 
 export const Cards = () => {
   const [target, setTarget] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target) {
+        case 0:
+          setTarget(1);
+          return;
+        case 1:
+          setTarget(2);
+          return;
+        case 2:
+          setTarget(0);
+          return;
+      }
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [target]);
+
   return (
     <div className="flex-col space-y-4  ">
       <div className="flex relative items-center mt-10 justify-center px-10  ">

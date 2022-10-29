@@ -11,6 +11,22 @@ export const News = () => {
   }, [target]);
 
   const ref = useRef(null);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target) {
+        case 4:
+          setTarget(0);
+          return;
+        default:
+          setTarget((prev) => prev + 1);
+          return;
+      }
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [target]);
+
   return (
     <div className="flex flex-col">
       <div className="flex justify-between px-2 my-2 items-center">

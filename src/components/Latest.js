@@ -12,6 +12,22 @@ export const Latest = () => {
     const percent = 50 * target;
     ref.current.style.transform = `translateX(-${percent}%)`;
   }, [target]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target) {
+        case 0:
+          setTarget(1);
+          return;
+        case 1:
+          setTarget(0);
+          return;
+      }
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [target]);
+
   return (
     <div className="flex flex-col  mt-5">
       <div className="flex flex-col px-4">

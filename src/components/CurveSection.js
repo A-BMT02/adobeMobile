@@ -17,6 +17,51 @@ export const CurveSection = () => {
   }, [target]);
 
   useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target) {
+        case 0:
+          setTarget(1);
+          return;
+        case 1:
+          setTarget(0);
+          return;
+      }
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [target]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target1) {
+        case 0:
+          setTarget1(1);
+          return;
+        case 1:
+          setTarget1(0);
+          return;
+      }
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [target1]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target2) {
+        case 0:
+          setTarget2(1);
+          return;
+        case 1:
+          setTarget2(0);
+          return;
+      }
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [target2]);
+
+  useEffect(() => {
     const percent = 50 * target1;
 
     ref1.current.style.transform = `translateX(-${percent}%)`;

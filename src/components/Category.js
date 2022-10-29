@@ -11,6 +11,22 @@ export const Category = ({ title, image, background }) => {
     ref.current.style.transform = `translateX(-${percent}%)`;
   }, [target]);
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target) {
+        case 0:
+          setTarget(1);
+          return;
+        case 4:
+          setTarget(0);
+          return;
+        default:
+          setTarget((prev) => prev + 1);
+      }
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [target]);
+
   const ref = useRef(null);
   return (
     <div className="flex flex-col">

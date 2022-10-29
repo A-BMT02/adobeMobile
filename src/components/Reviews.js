@@ -11,6 +11,24 @@ export const Reviews = () => {
     ref.current.style.transform = `translateX(-${percent}%)`;
   }, [target]);
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      switch (target) {
+        case 0:
+          setTarget(1);
+          return;
+        case 1:
+          setTarget(2);
+          return;
+        case 2:
+          setTarget(0);
+          return;
+      }
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [target]);
+
   const ref = useRef(null);
   return (
     <div className="mt-10 relative overflow-hidden">
